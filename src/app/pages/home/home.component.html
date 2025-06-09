@@ -1,0 +1,43 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Gestion Usuarios</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pages/home" routerLinkActive="active">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pages/perfil" routerLinkActive="active">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pages/estructuras" routerLinkActive="active">Estructuras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pages/documentacion" routerLinkActive="active">Documentacion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pages/usuarios" routerLinkActive="active">Usuarios</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container main-content">
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <div class="welcome-card">
+        <h1 class="display-4 text-primary">Bienvenido</h1>
+        <p class="lead">Sistema de Gestion de Usuarios con Angular</p>
+        <hr class="my-4">
+        <p>Esta aplicacion demuestra el uso de componentes, servicios, routing y consumo de APIs en Angular.</p>
+        <a class="btn btn-primary btn-lg" routerLink="/pages/usuarios" role="button">Ver Usuarios</a>
+      </div>
+    </div>
+  </div>
+</div>

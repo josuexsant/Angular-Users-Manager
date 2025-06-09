@@ -1,0 +1,172 @@
+﻿<div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center mb-4">Documentación y Tecnologías</h2>
+      
+      <div class="row">
+        <!-- Enlaces Ãštiles -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header bg-primary text-white">
+              <h4 class="mb-0">Enlaces útiles</h4>
+            </div>
+            <div class="card-body">
+              <a href="https://angular.io/docs" target="_blank" class="btn btn-primary d-block mb-3">
+                Documentación Oficial de Angular
+              </a>
+              <a href="https://ionicframework.com/docs" target="_blank" class="btn btn-secondary d-block mb-3">
+                Documentación de Ionic
+              </a>
+              <a href="https://getbootstrap.com/docs" target="_blank" class="btn btn-info d-block mb-3">
+                Documentación de Bootstrap
+              </a>
+              <a href="https://www.typescriptlang.org/docs" target="_blank" class="btn btn-warning d-block">
+                Documentación de TypeScript
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Carrusel de TecnologÃ­as -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header bg-success text-white">
+              <h4 class="mb-0">Tecnologías del Proyecto</h4>
+            </div>
+            <div class="card-body">
+              <!-- Carrusel Bootstrap -->
+              <div id="techCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="3"></button>
+                  <button type="button" data-bs-target="#techCarousel" data-bs-slide-to="4"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                  <!-- Angular -->
+                  <div class="carousel-item active">
+                    <div class="tech-slide">
+                      <div class="tech-logo angular-logo">
+                        <i class="fab fa-angular"></i>
+                      </div>
+                      <h3>Angular</h3>
+                      <p>Framework completo para aplicaciones web modernas</p>
+                    </div>
+                  </div>
+                  
+                  <!-- TypeScript -->
+                  <div class="carousel-item">
+                    <div class="tech-slide">
+                      <div class="tech-logo typescript-logo">
+                        <span class="ts-text">TS</span>
+                      </div>
+                      <h3>TypeScript</h3>
+                      <p>JavaScript con tipado estÃ¡tico para mejor desarrollo</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Node.js -->
+                  <div class="carousel-item">
+                    <div class="tech-slide">
+                      <div class="tech-logo nodejs-logo">
+                        <i class="fab fa-node-js"></i>
+                      </div>
+                      <h3>Node.js</h3>
+                      <p>Runtime de JavaScript para el lado del servidor</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Ionic -->
+                  <div class="carousel-item">
+                    <div class="tech-slide">
+                      <div class="tech-logo ionic-logo">
+                        <span class="ionic-text">ionic</span>
+                      </div>
+                      <h3>Ionic</h3>
+                      <p>Framework para aplicaciones mÃ³viles hÃ­bridas</p>
+                    </div>
+                  </div>
+                  
+                  <!-- NPM -->
+                  <div class="carousel-item">
+                    <div class="tech-slide">
+                      <div class="tech-logo npm-logo">
+                        <i class="fab fa-npm"></i>
+                      </div>
+                      <h3>NPM</h3>
+                      <p>Gestor de paquetes para el ecosistema JavaScript</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#techCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#techCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Informacion adicional -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-dark text-white">
+              <h4 class="mb-0">Stack Tecnologico del Proyecto</h4>
+            </div>
+            <div class="card-body">
+              <div class="row text-center">
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                  <div class="tech-badge">
+                    <i class="fab fa-angular text-danger fs-2"></i>
+                    <p class="mt-2 mb-0">Angular</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                  <div class="tech-badge">
+                    <span class="typescript-mini">TS</span>
+                    <p class="mt-2 mb-0">TypeScript</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                  <div class="tech-badge">
+                    <i class="fab fa-node-js text-success fs-2"></i>
+                    <p class="mt-2 mb-0">Node.js</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                  <div class="tech-badge">
+                    <i class="fab fa-npm text-danger fs-2"></i>
+                    <p class="mt-2 mb-0">NPM</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                  <div class="tech-badge">
+                    <i class="fab fa-bootstrap text-purple fs-2"></i>
+                    <p class="mt-2 mb-0">Bootstrap</p>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 mb-3">
+                  <div class="tech-badge">
+                    <span class="ionic-mini">ionic</span>
+                    <p class="mt-2 mb-0">Ionic</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+﻿<div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center mb-4">Ejemplos de Estructuras Angular</h2>
+      
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4>Ejemplo de *ngIf</h4>
+        </div>
+        <div class="card-body">
+          <button class="btn btn-primary" (click)="toggleEjemplo()">
+            {{ mostrarEjemplo ? 'Ocultar' : 'Mostrar' }} Ejemplo
+          </button>
+          <div *ngIf="mostrarEjemplo" class="alert alert-success mt-3">
+            Este mensaje se muestra condicionalmente con *ngIf!
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4>Ejemplo de *ngFor</h4>
+        </div>
+        <div class="card-body">
+          <h5>Lista de Tecnologias:</h5>
+          <ul class="list-group">
+            <li *ngFor="let tech of tecnologias; let i = index" class="list-group-item">
+              {{ i + 1 }}. {{ tech }}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4>Ejemplo de ngSwitch</h4>
+        </div>
+        <div class="card-body">
+          <select class="form-select mb-3" [(ngModel)]="opcionSeleccionada">
+            <option value="angular">Angular</option>
+            <option value="react">React</option>
+            <option value="vue">Vue</option>
+          </select>
+          
+          <div [ngSwitch]="opcionSeleccionada">
+            <div *ngSwitchCase="'angular'" class="alert alert-danger">
+              <strong>Angular:</strong> Framework completo de Google
+            </div>
+            <div *ngSwitchCase="'react'" class="alert alert-info">
+              <strong>React:</strong> Libreria de Facebook
+            </div>
+            <div *ngSwitchCase="'vue'" class="alert alert-success">
+              <strong>Vue:</strong> Framework progresivo
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
